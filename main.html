@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bar Chart</title>
+<style>
+    .chart {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 50%;
+        height: auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-top: 250px;
+        align-self: center;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .bar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .bar {
+        width: 40px;
+        background-color: #007bff;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .bar span {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+    }
+</style>
+</head>
+<body>
+<div class="chart" id="chart"></div>
+
+    <script src="./graph.js"></script>
+</body>
+</html>
